@@ -1,0 +1,70 @@
+body{
+    background-color: #a3a8c6;
+
+
+    
+}
+/* Color de fondo para el contenedor del formulario */
+.form-container {
+    background-color: #dbdeee; /* Cambia este color según tu preferencia */
+    padding: 20px; /* Espacio interno alrededor del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+
+form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #064784; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #a3a8c6; /* Color de fondo */
+}
+h2{
+    text-align: center;
+    color: #090909;
+    font-size: larger;
+}
+label{
+    display: block;
+    margin: 10 px 0 5px;
+    font-weight: bold;
+}
+
+
+/*Campos de Entrada*/
+input{
+
+width: 100%;
+padding: 10px;
+border:  1 px solid #ccc;
+border-radius: 4 px;
+box-sizing: border-box;
+
+
+}
+
+button{
+    width:100%;
+    padding: 10px;
+    background-color: 
+    rgb(21, 63, 95);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+button:hover{
+background-color: rgb(126, 136, 132);
+}
+div{
+    color:rgb(21, 2, 2);
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+

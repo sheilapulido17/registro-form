@@ -1,0 +1,26 @@
+<h2>Registro (Model-Driven)</h2>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <label for="name">Nombre:</label>
+  <input id="name" formControlName="name">
+  <div *ngIf="registerForm.get('name')?.invalid && registerForm.get('name')?.touched">
+    El nombre es requerido
+  </div>
+
+  <label for="email">Correo electrónico:</label>
+  <input id="email" formControlName="email">
+  <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+    Email no es válido
+  </div>
+
+  <label for="password">Contraseña:</label>
+  <input id="password" type="password" formControlName="password">
+  <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched">
+    La contraseña debe tener al menos 6 caracteres
+  </div>
+
+  <button type="submit" [disabled]="registerForm.invalid">Registrar</button>
+</form>
+
+<p *ngIf="response">{{ response }}</p>
+<p *ngIf="error">{{ error }}</p>
+
